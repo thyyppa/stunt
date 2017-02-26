@@ -1,1 +1,3 @@
-img2wav
+stunt
+=====
+A C++ experiment in embedding images into wav file spectrographs.
