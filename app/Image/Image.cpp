@@ -8,7 +8,13 @@ Image::Image( std::string filename )
 
 char Image::getValue( int x, int y )
 {
-    return this->image.at<cv::Vec3b>( this->image.rows - y, x )[ 0 ];
+    try
+    {
+        return this->image.at<cv::Vec3b>( this->image.rows - y, x )[ 0 ];
+    } catch ( const std::exception &e )
+    {
+        return 0;
+    }
 }
 
 int Image::width()
