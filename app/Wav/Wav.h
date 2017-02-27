@@ -8,12 +8,6 @@
 class Wav {
 public:
     Wav( std::string filename, std::vector<int> samples );
-    char *filename = "test.wav";
-    int  pixel_len = 10; //samples
-    int  height    = 200;
-    int  max_hz    = 20000;
-    int  min_hz    = 5000;
-    int  len       = 10; //seconds
 protected:
     void generate( std::string filename, std::vector<int> samples );
     void addHeader( std::ofstream &o, int length );
