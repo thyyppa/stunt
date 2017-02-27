@@ -1,6 +1,6 @@
 #include "Modulator.h"
 
-std::vector<int> Modulator::generateSamples()
+std::vector<int> Modulator::generateSamples( Terminal &terminal )
 {
     std::vector<int> samples;
 
@@ -21,6 +21,7 @@ std::vector<int> Modulator::generateSamples()
             }
             samples.push_back( sample / image.height());
         }
+        terminal.reportProgress((float) x / ( image.width() / 3 ));
     }
     return samples;
 }
