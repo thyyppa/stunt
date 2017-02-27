@@ -4,8 +4,9 @@
 #include <cstdio>
 #include <sys/ioctl.h>
 #include <zconf.h>
+#include <Reporter/Reporter.h>
 
-class Terminal {
+class Terminal : public Reporter {
 public:
     Terminal();
     void reportProgress( float progress );
