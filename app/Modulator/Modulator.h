@@ -13,7 +13,7 @@ public:
     int   pixel_width = 5000;
     int   max_freq    = 22000;
     int   min_freq    = 500;
-    float power       = 1.0;
+    float power       = 0.75;
 protected:
     Image image;
 };
