@@ -10,9 +10,9 @@ public:
     Modulator( Image image ) : image{ image }
     {};
     std::vector<int> generateSamples( Reporter &reporter );
-    int pixel_width = 1000;
-    int max_freq    = 21000;
-    int min_freq    = 2000;
+    int   pixel_width = 5000;
+    int   max_freq    = 22000;
+    int   min_freq    = 500;
     float power       = 1.0;
 protected:
     Image image;
