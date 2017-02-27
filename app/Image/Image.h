@@ -1,5 +1,5 @@
-#ifndef IMG2WAV_IMAGE_H
-#define IMG2WAV_IMAGE_H
+#ifndef STUNT_IMAGE_H
+#define STUNT_IMAGE_H
 
 #include "opencv2/opencv.hpp"
 
@@ -15,4 +15,4 @@ protected:
 };
 
 
-#endif //IMG2WAV_IMAGE_H
+#endif //STUNT_IMAGE_H

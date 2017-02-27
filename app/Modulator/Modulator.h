@@ -1,5 +1,5 @@
-#ifndef IMG2WAV_MODULATOR_H
-#define IMG2WAV_MODULATOR_H
+#ifndef STUNT_MODULATOR_H
+#define STUNT_MODULATOR_H
 
 
 #include <Image/Image.h>
@@ -18,4 +18,4 @@ protected:
 };
 
 
-#endif //IMG2WAV_MODULATOR_H
+#endif //STUNT_MODULATOR_H

@@ -1,5 +1,5 @@
-#ifndef IMG2WAV_WAV_H
-#define IMG2WAV_WAV_H
+#ifndef STUNT_WAV_H
+#define STUNT_WAV_H
 
 
 #include <vector>
@@ -22,4 +22,4 @@ protected:
 };
 
 
-#endif //IMG2WAV_WAV_H
+#endif //STUNT_WAV_H

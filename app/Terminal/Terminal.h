@@ -1,5 +1,5 @@
-#ifndef SNAKESONAPLANE_TERMINAL_H
-#define SNAKESONAPLANE_TERMINAL_H
+#ifndef STUNT_TERMINAL_H
+#define STUNT_TERMINAL_H
 
 #include <cstdio>
 #include <sys/ioctl.h>
@@ -15,4 +15,4 @@ protected:
 };
 
 
-#endif //SNAKESONAPLANE_TERMINAL_H
+#endif //STUNT_TERMINAL_H
