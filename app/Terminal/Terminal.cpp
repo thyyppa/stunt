@@ -1,3 +1,4 @@
+#include <exception>
 #include "Terminal.h"
 
 Terminal::Terminal()
@@ -9,15 +10,21 @@ Terminal::Terminal()
 
 void Terminal::reportProgress( float progress )
 {
-    printf( " %3.0f%% |", progress * 100 );
-    int       count = progress * (float) this->terminal_width;
-    for ( int i     = 0; i < count; ++i )
+    try
     {
-        printf( "#" );
-    }
-    for ( int j     = 0; j < ( this->terminal_width - count ); ++j )
+        printf( " %3.0f%% |", progress * 100 );
+        int       count = progress * (float) this->terminal_width;
+        for ( int i     = 0; i < count; ++i )
+        {
+            printf( "#" );
+        }
+        for ( int j     = 0; j < ( this->terminal_width - count ); ++j )
+        {
+            printf( " " );
+        }
+        printf( "|\r" );
+    } catch ( const std::exception &e )
     {
-        printf( " " );
+        // meh
     }
-    printf( "|\r" );
 }
