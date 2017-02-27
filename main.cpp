@@ -14,6 +14,6 @@ int main( int argc, char **argv )
 
     Wav wav(
             filename.append( ".wav" ),
-            modulator.generateSamples(terminal)
+            modulator.generateSamples( terminal )
     );
 }
